@@ -1,0 +1,39 @@
+
+<div class="d-flex">
+
+  <!-- Sidebar -->
+  <div class="bg-dark text-white p-3 vh-100" style="width: 250px;">
+    <h4 class="text-center">EMS</h4>
+    <hr>
+
+    <ul class="nav flex-column">
+
+      <li class="nav-item" *ngIf="role === 'Admin' || role === 'HR'">
+        <a class="nav-link text-white" routerLink="/employees">Employees</a>
+      </li>
+
+      <li class="nav-item" *ngIf="role === 'Employee'">
+        <a class="nav-link text-white" routerLink="/leave/apply">Apply Leave</a>
+      </li>
+
+      <li class="nav-item" *ngIf="role === 'HR'">
+        <a class="nav-link text-white" routerLink="/leave/list">Leave Requests</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link text-white" routerLink="/attendance">Attendance</a>
+      </li>
+
+      <li class="nav-item mt-3">
+        <button class="btn btn-danger w-100" (click)="logout()">Logout</button>
+      </li>
+
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="flex-fill p-4">
+    <router-outlet></router-outlet>
+  </div>
+
+</div>

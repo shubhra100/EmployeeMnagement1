@@ -1,0 +1,33 @@
+
+<div class="container mt-4">
+  <h2>Employee Dashboard</h2>
+  <p class="text-muted">Welcome Employee 👨‍💼</p>
+
+  <div class="row mt-4">
+
+    <div class="col-md-4">
+      <div class="card shadow p-3">
+        <h5>Apply Leave</h5>
+        <button class="btn btn-success"
+                (click)="applyLeave()">Open</button>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow p-3">
+        <h5>Mark Attendance</h5>
+        <button class="btn btn-info"
+                (click)="markAttendance()">Open</button>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow p-3 text-center">
+        <h5>Logout</h5>
+        <button class="btn btn-danger"
+                (click)="logout()">Logout</button>
+      </div>
+    </div>
+
+  </div>
+</div>

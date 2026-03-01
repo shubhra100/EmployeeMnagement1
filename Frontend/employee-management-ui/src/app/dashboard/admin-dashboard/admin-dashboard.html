@@ -1,0 +1,33 @@
+
+<div class="container mt-4">
+  <h2>Admin Dashboard</h2>
+  <p class="text-muted">Welcome Admin 👑</p>
+
+  <div class="row mt-4">
+
+    <div class="col-md-4">
+      <div class="card shadow p-3">
+        <h5>Manage Employees</h5>
+        <button class="btn btn-primary"
+                (click)="goToEmployees()">Open</button>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow p-3">
+        <h5>Attendance Records</h5>
+        <button class="btn btn-info"
+                (click)="goToAttendance()">Open</button>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow p-3 text-center">
+        <h5>Logout</h5>
+        <button class="btn btn-danger"
+                (click)="logout()">Logout</button>
+      </div>
+    </div>
+
+  </div>
+</div>

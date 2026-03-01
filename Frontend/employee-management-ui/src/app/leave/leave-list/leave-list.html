@@ -1,0 +1,44 @@
+
+<div class="container mt-4">
+  <h3>Leave Requests</h3>
+
+  <table class="table table-bordered">
+    <thead class="table-dark">
+      <tr>
+        <th>Employee</th>
+        <th>Start</th>
+        <th>End</th>
+        <th>Reason</th>
+        <th>Status</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let l of leaves">
+        <td>{{ l.employeeId }}</td>
+        <td>{{ l.startDate }}</td>
+        <td>{{ l.endDate }}</td>
+        <td>{{ l.reason }}</td>
+
+        <td>
+          <span class="badge bg-warning" *ngIf="l.status === 'Pending'">Pending</span>
+          <span class="badge bg-success" *ngIf="l.status === 'Approved'">Approved</span>
+          <span class="badge bg-danger" *ngIf="l.status === 'Rejected'">Rejected</span>
+        </td>
+
+        <td>
+          <button class="btn btn-success btn-sm me-2"
+            (click)="update(l.id, 'Approved')">
+            Approve
+          </button>
+
+          <button class="btn btn-danger btn-sm"
+            (click)="update(l.id, 'Rejected')">
+            Reject
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

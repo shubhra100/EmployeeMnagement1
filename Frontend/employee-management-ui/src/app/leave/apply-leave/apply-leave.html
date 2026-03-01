@@ -1,0 +1,33 @@
+
+<div class="container mt-4 col-md-6">
+  <h3>Apply Leave</h3>
+
+  <div *ngIf="errorMessage" class="alert alert-danger">
+    {{ errorMessage }}
+  </div>
+
+  <form [formGroup]="form" (ngSubmit)="submit()">
+
+    <div class="mb-3">
+      <label>Employee Id</label>
+      <input type="number" class="form-control" formControlName="employeeId">
+    </div>
+
+    <div class="mb-3">
+      <label>Start Date</label>
+      <input type="date" class="form-control" formControlName="startDate">
+    </div>
+
+    <div class="mb-3">
+      <label>End Date</label>
+      <input type="date" class="form-control" formControlName="endDate">
+    </div>
+
+    <div class="mb-3">
+      <label>Reason</label>
+      <textarea class="form-control" formControlName="reason"></textarea>
+    </div>
+
+    <button class="btn btn-primary">Submit</button>
+  </form>
+</div>
