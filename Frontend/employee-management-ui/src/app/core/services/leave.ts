@@ -9,7 +9,7 @@ import { LeaveRequest } from '../../models/leave.model';
 })
 export class LeaveService {
 
-  private apiUrl = 'https://localhost:5001/api/leave';
+  private apiUrl = 'https://localhost:7239/api/Leave/apply';
 
   constructor(private http: HttpClient) {}
 

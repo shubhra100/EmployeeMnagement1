@@ -9,7 +9,7 @@ import { Attendance } from '../../models/attendance.model';
 })
 export class AttendanceService {
 
-  private apiUrl = 'https://localhost:5001/api/attendance'; // change if needed
+  private apiUrl = 'https://localhost:7239/api/Attendance/mark'; // change if needed
 
   constructor(private http: HttpClient) {}
 
