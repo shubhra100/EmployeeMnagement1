@@ -8,7 +8,7 @@ The system provides secure backend APIs built with ASP.NET Core Web API and a re
 
 This project demonstrates end-to-end development including database design, API development, business logic implementation, and frontend integration.
 
----
+-----------------------
 
 ## 🚀 Features
 
@@ -37,7 +37,7 @@ This project demonstrates end-to-end development including database design, API 
 - Total Absent Today
 - Total Pending Leaves
 
----
+---------------------
 
 ## 🛠 Tech Stack
 
@@ -53,7 +53,7 @@ This project demonstrates end-to-end development including database design, API 
 - JavaScript / Angular (if applicable)
 - REST API Integration
 
----
+--------------------
 
 ## 🏗 Architecture
 
@@ -69,7 +69,7 @@ Data Access Layer (EF Core)
 SQL Server Database
 
 
----
+----------------------------
 
 ## 🗄 Database Design
 
@@ -97,4 +97,88 @@ SQL Server Database
 - Status (Pending / Approved / Rejected)
 - AppliedOn
 
----
+----------------
+
+## ⚙️ How To Run The Project
+
+### 🔹 Backend
+1. Clone the repository
+2. Open solution in Visual Studio
+3. Update connection string in `appsettings.json`
+4. Run the project
+5. Swagger will open:
+   
+https://localhost:xxxx/swagger
+
+
+### 🔹 Frontend
+1. Navigate to frontend folder
+2. Install dependencies (if Angular):
+
+npm install
+
+3. Run application:
+
+ng serve
+
+4. Open in browser:
+
+http://localhost:XXXX
+
+--------------------
+
+## 📌 API Endpoints
+
+### Employee
+- GET /api/Employee
+- GET /api/Employee/{id}
+- POST /api/Employee
+- PUT /api/Employee/{id}
+- DELETE /api/Employee/{id}
+
+### Attendance
+- POST /api/Attendance/mark
+- GET /api/Attendance
+
+### Leave
+- POST /api/Leave/apply
+- PUT /api/Leave/{id}/approve
+- PUT /api/Leave/{id}/reject
+- GET /api/Leave
+
+-----------------
+
+## 🔐 Future Enhancements
+
+- JWT Authentication
+- Role-Based Authorization (Admin / HR / Employee)
+- Email Notifications
+- Global Exception Handling
+- Pagination & Filtering
+- Cloud Deployment
+- Clean Architecture Implementation
+
+-------------------
+
+## 📊 Learning Outcomes
+
+- REST API development using ASP.NET Core
+- Entity Framework Core integration
+- Database design and relationships
+- Full Stack integration
+- Business logic implementation
+- API testing with Swagger
+- Version control using Git & GitHub
+
+---------------------
+
+## 👨‍💻 Author
+
+Developed as a Full Stack learning and backend development project.
+
+---------------------
+
+## 📄 License
+
+This project is for educational and demonstration purposes.   
+   
